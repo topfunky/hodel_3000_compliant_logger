@@ -2,4 +2,9 @@
 
 For use with the Rails Analyzer Tools.
 
+See initial announcement here:
+
+http://nubyonrails.com/articles/2007/01/03/a-hodel-3000-compliant-logger-for-the-rest-of-us
+
+
 More docs coming soon.
