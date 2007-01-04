@@ -12,3 +12,8 @@ More docs coming soon.
 
 If you are using FastCGI, you may need to hard-code the hostname instead of using Socket.gethostname
 
+== Author
+
+Geoffrey Grosenbach, with help from Eric Hodel
+
+http://topfunky.com
