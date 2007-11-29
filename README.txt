@@ -17,3 +17,7 @@ If you are using FastCGI, you may need to hard-code the hostname instead of usin
 Geoffrey Grosenbach, with help from Eric Hodel
 
 http://topfunky.com
+
+== Changes
+
+* Nov 29, 2007: Improvements and spec from Chris Bernard [http://logicleaf.com/]
