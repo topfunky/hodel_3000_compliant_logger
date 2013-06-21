@@ -1,0 +1,46 @@
+== Hodel 3000 Compliant Logger
+
+The Hodel 3000 Compliant Logger outputs like SyslogLogger (http://seattlerb.rubyforge.org/SyslogLogger/), except it doesn't need a syslog daemon running, such that your log come out exactly like syslog logs.
+
+Mostly, this is intended to let you use tools that assume your log are in this syslog format, including:
+
+* Rails Analyzer Tools: http://rails-analyzer.rubyforge.org/
+* oink: http://github.com/noahd1/oink
+
+See initial announcement here: http://nubyonrails.com/articles/a-hodel-3000-compliant-logger-for-the-rest-of-us
+
+=== Installation and congiguration
+
+  gem install hodel_3000_compliant_logger
+
+The main thing hodel_3000_complaint_logger provides is the Hodel3000ComplaintLogger class. It's a subclass of Logger (http://ruby-doc.org/core/classes/Logger.html), so you can use it as you would any Logger, really, except it outputs slightly different.
+
+  require 'hodel_3000_compliant_logger'
+  log = Hodel3000ComplaintLogger.new(STDOUT)
+  log.level = Logger::WARN
+
+  log.debug("Created logger")
+  log.info("Program started")
+  log.warn("Nothing to do!")
+
+To use hodel_3000_complaint_logger in Rails 3 as a replacement for the default logger, place the following line in your application.rb:
+
+  config.logger = Hodel3000CompliantLogger.new(config.paths.log.first)
+
+In Rails 2, instead use the following in your environment.rb file:
+
+  config.logger = Hodel3000CompliantLogger.new(config.paths.log.first)
+
+=== NOTE
+
+If you are using FastCGI, you may need to hard-code the hostname instead of using Socket.gethostname
+
+== Author
+
+Geoffrey Grosenbach, with help from Eric Hodel
+
+http://topfunky.com
+
+== Changes
+
+* Nov 29, 2007: Improvements and spec from Chris Bernard [http://logicleaf.com/]
