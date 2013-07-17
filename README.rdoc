@@ -13,10 +13,10 @@ See initial announcement here: http://nubyonrails.com/articles/a-hodel-3000-comp
 
   gem install hodel_3000_compliant_logger
 
-The main thing hodel_3000_complaint_logger provides is the Hodel3000ComplaintLogger class. It's a subclass of Logger (http://ruby-doc.org/core/classes/Logger.html), so you can use it as you would any Logger, really, except it outputs slightly different.
+The main thing hodel_3000_complaint_logger provides is the Hodel3000CompliantLogger class. It's a subclass of Logger (http://ruby-doc.org/core/classes/Logger.html), so you can use it as you would any Logger, really, except it outputs slightly different.
 
   require 'hodel_3000_compliant_logger'
-  log = Hodel3000ComplaintLogger.new(STDOUT)
+  log = Hodel3000CompliantLogger.new(STDOUT)
   log.level = Logger::WARN
 
   log.debug("Created logger")
