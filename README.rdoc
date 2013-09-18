@@ -23,11 +23,15 @@ The main thing hodel_3000_complaint_logger provides is the Hodel3000CompliantLog
   log.info("Program started")
   log.warn("Nothing to do!")
 
-To use hodel_3000_complaint_logger in Rails 3 as a replacement for the default logger, place the following line in your application.rb:
+To use hodel_3000_complaint_logger in Rails 4 as a replacement for the default logger, place the following line in your config/application.rb:
+
+  config.logger = Hodel3000CompliantLogger.new(config.paths['log'].first)
+
+In Rails 3, use the following line instead (in config/application.rb):
 
   config.logger = Hodel3000CompliantLogger.new(config.paths.log.first)
 
-In Rails 2, instead use the following in your environment.rb file:
+In Rails 2, instead use the following in your config/environment.rb file:
 
   config.logger = Hodel3000CompliantLogger.new(config.paths.log.first)
 
