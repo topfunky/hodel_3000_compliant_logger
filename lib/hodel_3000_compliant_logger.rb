@@ -19,7 +19,7 @@ class Hodel3000CompliantLogger < Logger
   end
 
   def process_id
-    @process_id ||= "#{$PID}:#{Thread.current.object_id}"
+    "#{$PID}#{Thread.current.object_id}"
   end
 
   def msg2str(msg)
