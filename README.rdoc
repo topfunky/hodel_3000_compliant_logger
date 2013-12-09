@@ -9,7 +9,7 @@ Mostly, this is intended to let you use tools that assume your log are in this s
 
 See initial announcement here: http://nubyonrails.com/articles/a-hodel-3000-compliant-logger-for-the-rest-of-us
 
-=== Installation and congiguration
+=== Installation and configuration
 
   gem install hodel_3000_compliant_logger
 
