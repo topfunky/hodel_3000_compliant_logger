@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "spec/hodel_3000_compliant_logger_spec.rb"
   ]
   s.homepage = "http://github.com/topfunky/hodel_3000_compliant_logger"
+  s.license = 'MIT'
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
   s.summary = "Alternate logger for Rails that emits syslog-style output. For use with pl_analyze gem."
