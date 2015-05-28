@@ -12,7 +12,6 @@ begin
     gem.homepage = "http://github.com/topfunky/hodel_3000_compliant_logger"
     gem.license = "MIT"
     gem.authors = ["Geoffrey Grosenbach"]
-    gem.add_development_dependency "rspec", "~> 1.3.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
