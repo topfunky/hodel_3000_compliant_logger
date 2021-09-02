@@ -8,10 +8,8 @@ GEM
       git (>= 1.2.5)
       rake
       rdoc
-    json (1.7.6)
     rake (10.0.3)
-    rdoc (3.12)
-      json (~> 1.4)
+    rdoc (6.3.2)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
